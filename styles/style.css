@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+#header {
+    background-color: #FF6B35;
+    padding: 1rem 0;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #000000;
+    color: #FF6B35;
+}
+
+nav a.active {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #1A1A1A;
+    border: 2px solid #FF6B35;
+    border-radius: 10px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: #FF6B35;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #CCCCCC;
+}
+
+.sports-cars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.car-card {
+    background-color: #2A2A2A;
+    border: 2px solid #FF6B35;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    border-color: #FFFFFF;
+}
+
+.car-image {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(135deg, #FF6B35, #FF8C35);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.rounder-img {
+    border-radius: 50%;
+}
+
+
+.mclaren-silhouette {
+    background: linear-gradient(to right, transparent 12%, #1A1A1A 12%, #1A1A1A 88%, transparent 88%),
+        linear-gradient(to bottom, transparent 32%, #1A1A1A 32%, #1A1A1A 68%, transparent 68%);
+}
+
+.mclaren-silhouette::before {
+    content: '';
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 36%;
+    background: #1A1A1A;
+    border-radius: 25px 25px 5px 5px;
+}
+
+.mclaren-silhouette::after {
+    content: '';
+    position: absolute;
+    bottom: 22%;
+    left: 18%;
+    width: 12%;
+    height: 12%;
+    background: #1A1A1A;
+    border-radius: 50%;
+    box-shadow: 52% 0 0 #1A1A1A;
+}
+
+
+.car-card h3 {
+    color: #FF6B35;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.car-info {
+    margin-bottom: 1rem;
+}
+
+.car-info span {
+    display: inline-block;
+    background-color: #FF6B35;
+    color: #000000;
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.car-description {
+    color: #CCCCCC;
+    margin-bottom: 1rem;
+}
+
+.price {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+.performance-section {
+    background-color: #1A1A1A;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid #FF6B35;
+    text-align: center;
+}
+
+.performance-section h2 {
+    color: #FF6B35;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.performance-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat {
+    padding: 1.5rem;
+    background-color: #2A2A2A;
+    border-radius: 10px;
+}
+
+.stat-number {
+    color: #FF6B35;
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    color: #CCCCCC;
+    font-size: 0.9rem;
+}
+
+footer {
+    background-color: #1A1A1A;
+    border-top: 3px solid #FF6B35;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #FF6B35;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #FFFFFF;
+}
+
+.footer-text {
+    color: #CCCCCC;
+    font-size: 0.9rem;
+}
+
